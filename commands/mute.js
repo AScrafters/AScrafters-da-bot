@@ -4,7 +4,7 @@ module.exports = {
     name: 'mute' ,
     description:'mutes people!',
     execute(message, args) {
-        if(!message.member.roles.has('727076911926476822'))
+        if(!message.member.hasPermission('MUTE_MEMBERS'))
         return message.reply('You don\'t have the permissions')
        
        const user = message.mentions.users.first(); 
@@ -13,7 +13,7 @@ module.exports = {
             const member = message.guild.member(user);
 
         if(member) {
-            member.roles.add('739342937581682800') 
+            member.roles.add('798471231144984597') 
               return message.reply(`Successfully Muted ${user}`)
 
        

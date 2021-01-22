@@ -20,7 +20,7 @@ module.exports = {
                message.reply('I was unable to Ban that user');
                console.log(err);
            });
-       } else {
+       } else{
            message.reply('That user isn\'t in the server!')
            }
 
