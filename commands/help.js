@@ -9,7 +9,7 @@ module.exports = {
     .setDescription('These are some fun commands of mine')
     .addFields(
      {name: '**Fun Section**', value: '`ping` `inviteme` `lmtao` `rickroll` `idk` `youtube` `aboutme` `pog` `rules` `christmas`', inline: false},
-     {name: '**Moderation Section**', value: '`ban` `kick` `mute`', inline: false},
+     {name: '**Moderation Section**', value: '`ban` `kick` `mute` `warn`', inline: false},
      {name: '**Utility Section**', value: '`membercount`', inline: false}
     )
     .setFooter('New commands will be added soon ;)');
