@@ -31,7 +31,7 @@ const args = message.content.slice(prefix.length).split(/ +/);
 const command=args.shift().toLowerCase();
 
 if(command === 'ping'){
-    message.channel.send('pong!🏓');
+client.commands.get('ping').execute(message, args);
 } else if (command == 'youtube'){
 message.channel.send('https://bit.ly/AScrafters');
 } else if (command == 'aboutme')
@@ -62,6 +62,14 @@ message.channel.send(':christmas_tree: Merry Christmas! ')
     client.commands.get('membercount').execute(message, args);
 } else if (command === 'warn'){
     client.commands.get('warn').execute(message, args);
+} else if (command === 'userinfo'){
+    client.commands.get('userinfo').execute(message, args);
+} else if (command == 'yeet'){
+    client.commands.get('yeet').execute(message, args);
+} else if (command == 'kill'){
+    client.commands.get('kill').execute(message, args);
+} else if (command == 'boop'){
+    client.commands.get('boop').execute(message, args); 
 }
 });
 
