@@ -1,0 +1,1 @@
+# AScrafters-da-bot This is my bot actually I made this because I have a decent amount of experience in coding so I posted this code here so all the people who are new to coding can code their own bot understand I hope this helps you :)
