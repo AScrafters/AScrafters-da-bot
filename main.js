@@ -70,6 +70,8 @@ message.channel.send(':christmas_tree: Merry Christmas! ')
     client.commands.get('kill').execute(message, args);
 } else if (command == 'boop'){
     client.commands.get('boop').execute(message, args); 
+} else if (command == 'clear'){
+    client.commands.get('clear').execute(message, args);
 }
 });
 
