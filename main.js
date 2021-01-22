@@ -60,6 +60,8 @@ message.channel.send(':christmas_tree: Merry Christmas! ')
     client.commands.get('mute').execute(message, args);
 } else if (command == 'membercount'){
     client.commands.get('membercount').execute(message, args);
+} else if (command === 'warn'){
+    client.commands.get('warn').execute(message, args);
 }
 });
 
