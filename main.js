@@ -6,6 +6,8 @@ const prefix = '-';
 
 const fs = require('fs');
 
+const memberCounter = require('./counters/member-counter');
+
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -15,6 +17,7 @@ for(const file of commandFiles){
 }
 client.once('ready',() =>  {
     console.log('AScrafters da bot is online!');
+    memberCounter(client)
     client.user.setActivity('AScrafters vids! | -help', {type:'WATCHING'}).catch(console.error);
 
   
